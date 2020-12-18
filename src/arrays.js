@@ -30,23 +30,17 @@ const removeNthElement = (index, array) => {
 };
 
 const numbersToStrings = numbers => {
-  for (let i = 0; i < numbers.length; i++) {
-    numbers[i] = String(numbers[i]);
-  }
+  numbers = numbers.map((number) => String(number));
   return numbers;
 };
 
 const uppercaseWordsInArray = strings => {
-  for (let i = 0; i < strings.length; i++) {
-    strings[i] = strings[i].toUpperCase();
-  }
+  strings = strings.map((string) => string.toUpperCase());
   return strings;
 };
 
 const reverseWordsInArray = strings => {
-  for (let i = 0; i < strings.length; i++) {
-    strings[i] = strings[i].split('').reverse().join('');
-  }
+  strings = strings.map((string) => string.split('').reverse().join(''));
   return strings;
 };
 

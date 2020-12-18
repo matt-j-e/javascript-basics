@@ -55,17 +55,11 @@ const startsWith = (char, string) => {
 };
 
 const containsVowels = string => {
-  let m = string.search(/[aeiou]/i);
-  if (m < 0) {
-    return false;
-  } else {
-    return true;
-  }
+  return string.search(/[aeiou]/i) >= 0;
 };
 
 const isLowerCase = string => {
-  let l = string.toLowerCase();
-  return l === string;
+  return string.toLowerCase() === string;
 };
 
 module.exports = {
